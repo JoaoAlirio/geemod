@@ -1,8 +1,8 @@
-title: geeMod
+title: geemod
 description: Scientific documentation for geeMod — a Google Earth Engine application
 theme: just-the-docs
 
-url: https://JoaoAlirio.github.io
-baseurl: /geeMod
+url: https://joaoalirio.github.io
+baseurl: /geemod
 
 search_enabled: true
