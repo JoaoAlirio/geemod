@@ -1,6 +1,6 @@
-title: geemod
-description: Scientific documentation for geeMod — a Google Earth Engine application
-remote_theme: just-the-docs/just-the-docs
+title: geeMod
+description: Documentation for geeMod — a Google Earth Engine application
+markdown: kramdown
 
 url: https://JoaoAlirio.github.io
 baseurl: geemod
