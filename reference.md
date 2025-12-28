@@ -1,8 +1,8 @@
 ---
+layout: default
 title: Reference
-nav_order: 4
 ---
 
 # Reference
 
-Technical and scientific references.
+Technical and scientific references. Coming soon ...
