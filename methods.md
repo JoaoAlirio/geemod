@@ -15,13 +15,20 @@ Within each module there are some specific functions described in each of the fo
 parameters that are transversal to the process  
 
 **- CRS**  
+
 The coordinate system ... (dizer onde se aplica)  
+
 **- Pixel Size (m)**  
+
 It must be specified in meters. ... (dizer onde se aplica)  
+
 **- Replications**  
+
 The number of times the models will be run, with different subsets of occurrences.  
 The different subsets for each replication are obtained by randomly separating presences and absences into training and test subsets, according to the defined percentage of test points.  
+
 **- Test points (%)**  
+
 Percentage of occurrences that will be reserved for validation.  
 <br>
 
