@@ -14,15 +14,14 @@ Within each module there are some specific functions described in each of the fo
 ## general settings
 parameters that are transversal to the process  
 
-**CRS**
-The coordinate system ... dizer onde se aplica  
-**Pixel Size (m)**
-It must be specified in meters. ... dizer onde se aplica  
-
-**Replications**
+**- CRS**  
+The coordinate system ... (dizer onde se aplica)  
+**- Pixel Size (m)**  
+It must be specified in meters. ... (dizer onde se aplica)  
+**- Replications**  
 The number of times the models will be run, with different subsets of occurrences.  
-The different subsets for each replication are obtained by randomly separating presences and absences into training and test subsets, according to the defined percentage of test points.
-**Test points (%)**
+The different subsets for each replication are obtained by randomly separating presences and absences into training and test subsets, according to the defined percentage of test points.  
+**- Test points (%)**  
 Percentage of occurrences that will be reserved for validation.  
 <br>
 
@@ -31,11 +30,12 @@ Defining the study area involves selecting two regions, one for calibration and 
 ...  
 ...  
 ## Presences
-coming soon ... (explicar remover duplicados e pseudo-ausencias)  
+coming soon ... (presenças - explicar remover duplicados; pseudo-ausencias explicar random points area de calibração exceto células com presenças, background maxent 10.000 random points ... dizer que user deve verificar se ocurrencias estão conforme esperado)  
 ## Predictors
-coming soon ... (breve explicação, remeter para reference e script no code editor - modules)  
+coming soon ... (breve explicação, remeter para reference e script no code editor - modules, dizer que user deve verificar se estão conforme esperado)  
 ## model settings
-coming soon ...  
+The classifiers selected in the checkbox of each upper left panel will be executed (Random Forest, Gradient Tree Boosting, CART, and/or Maxent). If none are selected and the models are run, the results will be empty.  
+There are some parameters for each classifier that the user can configure. The others parameters are kept at their default values. See the complete information on the GEE reference pages listed in the "Reference" tab.  
 
 ## Run Models
 coming soon ...
