@@ -11,10 +11,10 @@ title: How to
 <br>
 
 ## code editor version
-<a href="https://geemod.projects.earthengine.app/view/geemod">import geeMod scripts directory</a>  
+<a href="https://code.earthengine.google.com/?accept_repo=users/alirio/geemod">import geeMod scripts directory</a>  
 
 The directory containing the geeMod scripts will be imported into your GEE code editor environment.  
-Next, go to GEE > Scripts > Reader, find the geemod folder, and run the main script, named geemod.  
+Next, go to GEE > Scripts > Reader, find the geemod folder, and run the main script, named geemod_CE (coming soon).  
 <br>
 <br>
 
