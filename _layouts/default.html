@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    nav {
+      background: #2c3e50;
+      padding: 12px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/how-it-works' | relative_url }}">How it works</a>
+  <a href="{{ '/methods' | relative_url }}">Methods</a>
+  <a href="{{ '/reference' | relative_url }}">Reference</a>
+</nav>
+
+<main>
+  {{ content }}
+</main>
+
+</body>
+</html>
