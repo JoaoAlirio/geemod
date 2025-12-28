@@ -1,12 +1,15 @@
 ---
 layout: default
 title: Methods
+body_class: left-align
 ---
 
 # Application general structure
 geeMod is organized into modules that are combined according to the following general scheme:  
-![geemod_general_structure ](https://github.com/user-attachments/assets/d2f9f508-735e-4570-8eba-f0e5277621fa)
-Within each module there are some specific functions described in each of the following sections.
+![geemod_general_structure](https://github.com/user-attachments/assets/4ee934ab-a8f5-4d2e-8230-7c7f7c04ec35)
+<br>
+
+Within each module there are some specific functions described in each of the following section
 ## general settings
 parameters that are transversal to the process
 ### CRS - coordinate system
