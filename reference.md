@@ -11,10 +11,15 @@ body_class: left-align
 
 ## GEE reference pages for each classification algorithm
 
-**Random Forest** - https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest;
-**Gradient Tree Boost** - https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost;
-**CART** - https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart;
-**MaxEnt** - https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent;
+**Random Forest** - <a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest</a>  
+
+**Gradient Tree Boost** - <a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost</a>  
+
+**CART** - https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart;  
+
+**MaxEnt** - https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent;  
+
+<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost</a>
 
 ## GEE products used in selectable predictor variables
 
