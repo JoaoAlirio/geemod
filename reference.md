@@ -4,24 +4,26 @@ title: Reference
 body_class: left-align
 ---
 
-# scientific publication
+# Scientific publication
 <br>
 (in development)  
 <br>
 <br>
 
-# Resources used in the app
+# Resources used in geeMod
 <br>
 
 ## GEE reference pages for each classification algorithm
 <br>
-
-**Random Forest** - <a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest</a>  
-**Gradient Tree Boost** - <a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost</a>  
-**CART** - <a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart</a>  
-**MaxEnt** - <a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent</a>  
-
 <br>
+
+|Classifier|reference page|
+|---|---|
+|Random Forest|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest</a>|
+|Gradient Tree Boost|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost</a>|
+|CART|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart</a>|
+|MaxEnt|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent</a>|
+
 <br>
 
 ## GEE products used in selectable predictor variables
