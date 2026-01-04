@@ -18,9 +18,9 @@ body_class: left-align
 <br>
 
 |Classifier|reference page|
-|---|---|
+|---------------------|---|
 |Random Forest|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest</a>|
-|Gradient Tree Boost|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost</a>|
+|Gradient Tree Boost |<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilegradienttreeboost</a>|
 |CART|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-smilecart</a>|
 |MaxEnt|<a href="https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent" target="_blank">https://developers.google.com/earth-engine/apidocs/ee-classifier-amnhmaxent</a>|
 
