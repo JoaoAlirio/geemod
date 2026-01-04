@@ -1,4 +1,4 @@
-# geemod
+# geeMod
 
 Repository supporting the geeMod website:
 https://joaoalirio.github.io/geemod/reference  
