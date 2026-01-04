@@ -7,14 +7,14 @@ title: How to
 <br>
 
 ## web version
-<a href="https://geemod.projects.earthengine.app/view/geemod">launch geeMod</a>  
+<a href="https://geemod.projects.earthengine.app/view/geemod" target="_blank">launch geeMod</a>  
 <br>
 
 ## code editor version
-<a href="https://code.earthengine.google.com/?accept_repo=users/alirio/geemod">import geeMod scripts directory</a>  
+<a href="https://code.earthengine.google.com/?accept_repo=users/alirio/geemod" target="_blank">import geeMod scripts directory</a>  
 
 The directory containing the geeMod scripts will be imported into your GEE code editor environment.  
-Next, go to GEE > Scripts > Reader, find the geemod folder, and run the main script, named geemod_CE (coming soon).  
+Next, go to GEE > Scripts > Reader, find the geemod folder, and run the main script, named geemod_codeEditor.  
 <br>
 <br>
 
@@ -25,4 +25,4 @@ Next, go to GEE > Scripts > Reader, find the geemod folder, and run the main scr
 <br>
 
 ## assets video - import and export
-coming soon ...
+(coming soon ...)
