@@ -16,22 +16,22 @@ The structure of the following sections follows the organization of the menu but
 ## general settings
 parameters that are transversal to the process  
 
-**- CRS**  
+**CRS**  
 
 The coordinate system must be written explicitly (e.g., "EPSG:4326", "EPSG:3035").
 The various layers (e.g., regions, predictor variables) are reprojected onto this CRS using the reproject() function. This causes the outputs to also be generated within this CRS.  
 
-**- Pixel Size (m)**  
+**Pixel Size (m)**  
 
 It must be specified in meters. It is also used in the reproject() function in conjunction with CRS. In addition, it impacts the cleanup of occurrences.
 In the codeEditor version, it is necessary to retype the scale in the Tasks export panel.
 
-**- Replications**  
+**Replications**  
 
 The number of times the models will be run, with different subsets of occurrences.  
 The different subsets for each replication are obtained by randomly separating presences and absences into training and test subsets, according to the defined percentage of test points.  
 
-**- Test points (%)**  
+**Test points (%)**  
 
 Percentage of occurrences that will be reserved for validation.  
 <br>
@@ -45,19 +45,20 @@ coming soon ... (, background maxent 10.000 random points ... dizer que user dev
 
 There are two ways to prepare the occurrences.
 
-**- Load a file with presences and absences**  
+**Load a file with presences and absences**  
 
-The file must have a property called "Presence", with 1 for presence and zero for absence.  
+- The file must have a property called "Presence", with 1 for presence and zero for absence.  
 
-**- Load a file with only presences and let geeMod generate pseudo-absences**  
+**Load a file with only presences and let geeMod generate pseudo-absences**  
 
-Pseudo-absences will be random points created within a subregion obtained by removing cells with presences from the calibration region.
-The number of random points will be equal to the number of presences multiplied by the user-defined factor (decimal number between 1 and 2).  
+- Pseudo-absences will be random points created within a subregion obtained by removing cells with presences from the calibration region.  
+- The number of random points will be equal to the number of presences multiplied by the user-defined factor (decimal number between 1 and 2).  
 
-**- Notes**  
+**Notes:**  
 - Presences will be filtered by the calibration region.  
 - Duplicate occurrences will be removed, leaving only one presence per cell (according to the defined crs and scale).  
 - The background used in MaxEnt is obtained from 10,000 random points generated in the calibration region, limited by the algorithm to the number of cells existing in that area.
+- The user should verify that the presences and absences are as expected.
 
 ## Predictors
 coming soon ... (There is a specific script for calculating the variables (modules/predictors.js) ... the user should verify that the predictor variables are as expected... see information about the resources used to calculate the variables in the "Reference" tab.)  
