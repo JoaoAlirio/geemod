@@ -40,8 +40,6 @@ Percentage of occurrences that will be reserved for validation.
 Defining the **study area** involves selecting two regions, one for calibration and the other for projection. The same region can be used to define both areas if the goal is to train and project the models in the same geographic space. Occurrences will be restricted to the calibration region. Predictor variables will be limited separately to each region. There are four ways to define the two regions that are illustrated in the video tutorial (by file, by selecting countries, by selecting ecoregions, and by drawing polygons).  
 
 ## Presences
-coming soon ... (, background maxent 10.000 random points ... dizer que user deve verificar se ocurrencias estão conforme esperado)  
-
 
 There are two ways to prepare the occurrences.
 
