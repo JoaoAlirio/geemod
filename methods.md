@@ -99,17 +99,35 @@ There are two modes to define predictor variables:
 - For each replication, the sets of occurrences are randomly separated into training and test subsets, according to the defined percentage (seeds vary, so partitions are distinct across replications).
 - The chosen models run separately, and the results appear as they are completed.
 - The implementation of the code is divided into three blocks:
-    - The first block has the generic modelling functions (one function for MaxEnt and another for the other three classifiers), which apply the definitions and various inputs to train (calibrate) the classifiers;
-    - The second block prepares the inputs and calls the generic modelling function of each classifier, passing them the respective input data.;
+    - The first block contains the generic modelling functions (one function for MaxEnt and another for the other three classifiers), which apply the settings and various inputs to train (calibrate) the classifiers. After training, for the replication performed, the function returns a trained classifier object and a dictionary with the Importance of Predictors;
+    - The second block prepares the inputs and calls the generic modelling function of each classifier, for each replication, passing them the respective input data;
     - The third block extracts and prepares the results for presentation in the user interface.
 - geeMod provides the mean prediction and standard deviation maps for each classifier. The mean map represents the averaged suitability across replications and can be used for further evaluation and ensemble modelling.
 
 <br>
 
 ## Variables importance
-coming soon ...
+
+- geeMod extracts raw importance scores per replication per classifier and converts them to normalised percentages.
+- We caution users about direct comparisons across different definitions of importance from each algorithm and encourage interpretation in terms of relative contributions and ecological plausibility rather than absolute values.
+
+<br>
+
 ## Validation
-coming soon ...
+
+- The evaluation of the selected models is performed separately, and the results of each model appear as they are completed.
+- Users can set the number of steps (thresholds) they wish to use. The usual range is between 20 and 25. A lower value can be set for a faster response, but this reduces the accuracy of identifying correctly classified test occurrences between the different thresholds. A higher value increases accuracy but may take longer or fail.
+- The implementation of the code is divided into xxx functions:
+    - The first function counts the correctly classified test occurrences for each threshold (TR - True Positives and TN - True Negatives). It then calculates some rates:
+        - True Positive Rate (Sensitivity) -> TPR = (TP / 'Presence Test Size')
+        - True Negative Rate (Specificity) -> TNR = (TN / 'Absence Test Size')
+        - False Positive Rate -> FPR = (1 - TNR)
+        - True Skill Statistic -> TSS = (Sensitivity + Specificity - 1)
+    - The second function uses the trapezoidal approximation to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
+
+
+
+
 ## Ensemble
 coming soon ...
 ## Load Project
