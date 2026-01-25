@@ -38,9 +38,9 @@ Percentage of occurrences that will be reserved for validation.
 
 ## Regions
 Defining the **study area** involves selecting two regions, one for **calibration** and the other for **projection**.  
-- The same region can be used to define both areas if the goal is to train and project the models in the same geographic space.
 - Occurrences will be restricted to the calibration region.
-- Predictor variables will be limited separately to each region.
+- The same region can be used to define both areas, in order to project the models onto the same geographical space.
+- The predictor variables will be limited separately for both the calibration and projection regions.
 - There are four ways to define the two regions (that are illustrated in the video tutorial):
     - by file
     - by selecting countries
@@ -55,7 +55,7 @@ There are two ways to prepare the occurrences.
 
 **Load a file with presences and absences**  
 
-- The file must have a property called `Presence`, with `1` for presence and `0` for absence.  
+- The file must have a property called 'Presence', with 1 for presence and 0 for absence.  
 
 **Load a file with only presences and let geeMod generate pseudo-absences**  
 
@@ -69,6 +69,8 @@ There are two ways to prepare the occurrences.
 - There are some examples of dataset occurrences, with or without absences, that are available for selection.
 - The user should verify that the presences and absences are as expected, by loading the various layers on the map and analysing the quantities in the table that appears in the results panel.
 
+<br>
+
 ## Predictors
 
 There are two modes to define predictor variables:
@@ -78,20 +80,22 @@ There are two modes to define predictor variables:
 **Notes:**  
 - Identical assets are required for calibration and projection within the same spatiotemporal domain.  
 - Projections to a different domain require distinct assets with identical band names and comparable units.
+- There is an option for users to calculate the Spearman correlation between variables.
 - The user should verify that the predictor variables are as expected, viewing the predictors on the map.
+- There is an external script for calculating the variables (geemod/modules/predictors.js), which is called by the main script.
 
-**Implementation:**  
-- There is a specific script for calculating the variables - `modules/predictors.js`.
-- 
-
-
+<br>
 
 ## model settings
 The classifiers selected in the checkbox of each upper left panel will be executed (Random Forest, Gradient Tree Boosting, CART, and/or Maxent). If none are selected and the models are run, the results will be empty.  
 There are some parameters for each classifier that the user can configure. The others parameters are kept at their default values. See the complete information on the GEE reference pages listed in the "Reference" tab.  
 
+<br>
+
 ## Run Models
 coming soon ...
+
+<br>
 
 ## Variables importance
 coming soon ...
