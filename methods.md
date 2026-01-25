@@ -65,9 +65,9 @@ There are two ways to prepare the occurrences.
 **Notes:**  
 - Presences will be filtered by the calibration region.  
 - Duplicate occurrences will be removed, leaving only one presence per cell (according to the defined crs and scale).  
-- The background used in MaxEnt is obtained from 10,000 random points generated in the calibration region, limited by the algorithm to the number of cells existing in that area.
-- There are some examples of dataset occurrences, with or without absences, that are available for selection.
-- The user should verify that the presences and absences are as expected, by loading the various layers on the map and analysing the quantities in the table that appears in the results panel.
+- There are some examples of occurrence datasets available for selection, with or without absences.
+- The background used in MaxEnt is obtained from 10,000 random points generated in the calibration region, limited by the algorithm to the number of cells existing in that area
+- The user can verify if the presences and absences are as expected by loading the different layers on the map and analyzing the numerical results presented.
 
 <br>
 
@@ -87,13 +87,22 @@ There are two modes to define predictor variables:
 <br>
 
 ## model settings
-The classifiers selected in the checkbox of each upper left panel will be executed (Random Forest, Gradient Tree Boosting, CART, and/or Maxent). If none are selected and the models are run, the results will be empty.  
-There are some parameters for each classifier that the user can configure. The others parameters are kept at their default values. See the complete information on the GEE reference pages listed in the "Reference" tab.  
+- The classifiers selected in the checkbox of each upper left panel will be executed: (Random Forest, Gradient Tree Boosting, CART, and/or MaxEnt).
+- If none are selected and the models are run, the results will be empty.
+- In RF, GTB, and CART, the output mode has been set to probabilistic, and the result band has been renamed to "probability." MaxEnt already follows this format.
+- There are some parameters for each classifier that the user can configure. The others parameters are kept at their default values. See the complete information on the GEE reference pages listed in the "Reference" tab.  
 
 <br>
 
 ## Run Models
-coming soon ...
+- The execution of the models is replicated the number of times defined by the user.
+- For each replication, the sets of occurrences are randomly separated into training and test subsets, according to the defined percentage (seeds vary, so partitions are distinct across replications).
+- The chosen models run separately, and the results appear as they are completed.
+- The implementation of the code is divided into three blocks:
+    - The first block has the generic modelling functions (one function for MaxEnt and another for the other three classifiers), which apply the definitions and various inputs to train (calibrate) the classifiers;
+    - The second block prepares the inputs and calls the generic modelling function of each classifier, passing them the respective input data.;
+    - The third block extracts and prepares the results for presentation in the user interface.
+- geeMod provides the mean prediction and standard deviation maps for each classifier. The mean map represents the averaged suitability across replications and can be used for further evaluation and ensemble modelling.
 
 <br>
 
