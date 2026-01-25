@@ -26,6 +26,16 @@ body_class: left-align
 
 <br>
 
+## Resources used in Regions module
+
+|Mode|Resource|Description|GEE Snippet|Source|
+|--|-------|---|---|----|
+|Select Country|Large-Scale Borders International Network (U.S.  2017)|284 countries|USDOS/LSIB_SIMPLE/2017||
+|Select Ecoregion|RESOLVE dataset |846 terrestrial ecoregions|RESOLVE/ECOREGIONS/2017|https://ecoregions2017.appspot.com|
+|Asset mode|available examples|8 regions||https://www.naturalearthdata.com/|
+
+<br>
+
 ## GEE products used in selectable predictor variables
 
 |Group|Name|Description|Units|Scale factor|Pixel Size (m)|GEE Snippet|
