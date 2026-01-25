@@ -37,7 +37,17 @@ Percentage of occurrences that will be reserved for validation.
 <br>
 
 ## Regions
-Defining the **study area** involves selecting two regions, one for calibration and the other for projection. The same region can be used to define both areas if the goal is to train and project the models in the same geographic space. Occurrences will be restricted to the calibration region. Predictor variables will be limited separately to each region. There are four ways to define the two regions that are illustrated in the video tutorial (by file, by selecting countries, by selecting ecoregions, and by drawing polygons).  
+Defining the **study area** involves selecting two regions, one for **calibration** and the other for **projection**.  
+- The same region can be used to define both areas if the goal is to train and project the models in the same geographic space.
+- Occurrences will be restricted to the calibration region.
+- Predictor variables will be limited separately to each region.
+- There are four ways to define the two regions (that are illustrated in the video tutorial):
+    - by file
+    - by selecting countries
+    - by selecting ecoregions
+    - by drawing polygons
+
+<br>
 
 ## Presences
 
@@ -45,7 +55,7 @@ There are two ways to prepare the occurrences.
 
 **Load a file with presences and absences**  
 
-- The file must have a property called "Presence", with 1 for presence and zero for absence.  
+- The file must have a property called `Presence`, with `1` for presence and `0` for absence.  
 
 **Load a file with only presences and let geeMod generate pseudo-absences**  
 
@@ -56,10 +66,25 @@ There are two ways to prepare the occurrences.
 - Presences will be filtered by the calibration region.  
 - Duplicate occurrences will be removed, leaving only one presence per cell (according to the defined crs and scale).  
 - The background used in MaxEnt is obtained from 10,000 random points generated in the calibration region, limited by the algorithm to the number of cells existing in that area.
-- The user should verify that the presences and absences are as expected.
+- There are some examples of dataset occurrences, with or without absences, that are available for selection.
+- The user should verify that the presences and absences are as expected, by loading the various layers on the map and analysing the quantities in the table that appears in the results panel.
 
 ## Predictors
-coming soon ... (There is a specific script for calculating the variables (modules/predictors.js) ... the user should verify that the predictor variables are as expected... see information about the resources used to calculate the variables in the "Reference" tab.)  
+
+There are two modes to define predictor variables:
+- **Select Variables mode** - The user selects from a list of 26 environmental layers (see table on "Reference" tab).  
+- **Image Asset mode** - The user explicitly indicates two assets.
+
+**Notes:**  
+- Identical assets are required for calibration and projection within the same spatiotemporal domain.  
+- Projections to a different domain require distinct assets with identical band names and comparable units.
+- The user should verify that the predictor variables are as expected, viewing the predictors on the map.
+
+**Implementation:**  
+- There is a specific script for calculating the variables - `modules/predictors.js`.
+- 
+
+
 
 ## model settings
 The classifiers selected in the checkbox of each upper left panel will be executed (Random Forest, Gradient Tree Boosting, CART, and/or Maxent). If none are selected and the models are run, the results will be empty.  
