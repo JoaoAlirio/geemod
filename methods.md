@@ -124,10 +124,10 @@ There are two modes to define predictor variables:
     - Finally, it receives the evaluation results for each replication and calculates their average to obtain the final metrics for that model.
 - The second block has four specific functions:
     - The getThreshMetrics() function counts the correctly classified test occurrences for each threshold (TR - True Positives and TN - True Negatives), and then calculates some rates to complete the table with all partial results:
-        - True Positive Rate (Sensitivity) -> (TPR = TP / 'Presence Test Size')
-        - True Negative Rate (Specificity) -> [TNR = TN / 'Absence Test Size']
-        - False Positive Rate -> FPR = 1 - TNR
-        - True Skill Statistic -> (TSS = Sensitivity + Specificity - 1)
+        - True Positive Rate (Sensitivity) -> [ TPR = TP / 'Presence Test Size' ]
+        - True Negative Rate (Specificity) -> [ TNR = TN / 'Absence Test Size' ]
+        - False Positive Rate -> [ FPR = 1 - TNR ]
+        - True Skill Statistic -> [ TSS = Sensitivity + Specificity - 1 ]
     - The getAUCROC() function uses the trapezoidal approximation to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
     - The evalReps() function only manages the process throughout the replications;
     - The tssAucReps() function obtains the final TSS and AUC from the results of the previous functions.
@@ -135,7 +135,19 @@ There are two modes to define predictor variables:
 <br>
 
 ## Ensemble
-coming soon ...
+
+There are five different options for ensembling mean prediction maps from classifiers:
+
+- Average & stdDev - pixel-wise arithmetic mean of classifier’s mean probability maps; The average map is displayed by default. The map with the standard deviation across classifier maps can optionally be loaded, as a measure of ensemble uncertainty;
+- Median - pixel-wise median of classifier’s mean maps, more robust to outliers;
+- AUC weighted average - pixel-wise mean weighted by classifier AUC;
+- TSS weighted average - pixel-wise mean weighted by classifier TSS;
+- Commission Average - first, each classifier’s mean map is classified in a binary map using its optimal TSS threshold; then the binary maps are added and divided by the number of classifiers to obtain proportion agreement.
+
+The weighted and commission options require model validation to be completed because they depend on threshold metric estimates. Buttons to run these ensemble types are enabled only after validation.
+
+<br>
+
 ## Load Project
 coming soon ...
 ## Save Project
