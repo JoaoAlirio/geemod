@@ -117,16 +117,22 @@ There are two modes to define predictor variables:
 
 - The evaluation of the selected models is performed separately, and the results of each model appear as they are completed.
 - Users can set the number of steps (thresholds) they wish to use. The usual range is between 20 and 25. A lower value can be set for a faster response, but this reduces the accuracy of identifying correctly classified test occurrences between the different thresholds. A higher value increases accuracy but may take longer or fail.
-- The implementation of the code is divided into xxx functions:
-    - The first function counts the correctly classified test occurrences for each threshold (TR - True Positives and TN - True Negatives). It then calculates some rates:
-        - True Positive Rate (Sensitivity) -> TPR = (TP / 'Presence Test Size')
-        - True Negative Rate (Specificity) -> TNR = (TN / 'Absence Test Size')
-        - False Positive Rate -> FPR = (1 - TNR)
+- The implementation of the code is divided into two blocks. The first block has four functions, one for each classifier, which manage the validation process for the respective classifier.
+    - Each of these functions begins by obtaining the trained classifier object and the set of presences and absences reserved for testing for each replication.
+    - It then applies the trained classifier to the image of the calibration predictor variables and obtains the model's result maps in the calibration region.
+    - With these results and test occurrences, it calls the specific functions to calculate each evaluation partial.
+    - Finally, it receives the evaluation results for each replication and calculates their average to obtain the final metrics for that model.
+- The second block has four specific functions:
+    - The getThreshMetrics() function counts the correctly classified test occurrences for each threshold (TR - True Positives and TN - True Negatives), and then calculates some rates to complete the table with all partial results:
+        - True Positive Rate (Sensitivity) -> $TPR = TP / 'Presence Test Size'$
+        - True Negative Rate (Specificity) -> $TNR = TN / 'Absence Test Size'$
+        - False Positive Rate -> $FPR = 1 - TNR$
         - True Skill Statistic -> TSS = (Sensitivity + Specificity - 1)
-    - The second function uses the trapezoidal approximation to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
+    - The getAUCROC() function uses the trapezoidal approximation to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
+    - The evalReps() function only manages the process throughout the replications;
+    - The tssAucReps() function obtains the final TSS and AUC from the results of the previous functions.
 
-
-
+<br>
 
 ## Ensemble
 coming soon ...
