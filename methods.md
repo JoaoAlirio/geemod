@@ -49,6 +49,10 @@ Defining the **study area** involves selecting two regions, one for **calibratio
 
 <br>
 
+![geemod_regions](https://github.com/user-attachments/assets/1f0d39b4-39c9-4c98-8d30-9b580cba7ab5)
+
+<br>
+
 ## Presences
 
 There are two ways to prepare the occurrences.
@@ -68,6 +72,10 @@ There are two ways to prepare the occurrences.
 - There are some examples of occurrence datasets available for selection, with or without absences.
 - The background used in MaxEnt is obtained from 10,000 random points generated in the calibration region, limited by the algorithm to the number of cells existing in that area
 - The user can verify if the presences and absences are as expected by loading the different layers on the map and analyzing the numerical results presented.
+
+<br>
+
+![geemod_presences](https://github.com/user-attachments/assets/2a1dd570-8e00-4302-94d1-9b0e723cf503)
 
 <br>
 
@@ -94,6 +102,10 @@ There are two modes to define predictor variables:
 
 <br>
 
+![geemod_classifiers](https://github.com/user-attachments/assets/74567103-2841-41e4-a7f0-c53a292565b1)
+
+<br>
+
 ## Run Models
 - The execution of the models is replicated the number of times defined by the user.
 - For each replication, the sets of occurrences are randomly separated into training and test subsets, according to the defined percentage (seeds vary, so partitions are distinct across replications).
@@ -110,6 +122,10 @@ There are two modes to define predictor variables:
 
 - geeMod extracts raw importance scores per replication per classifier and converts them to normalised percentages.
 - We caution users about direct comparisons across different definitions of importance from each algorithm and encourage interpretation in terms of relative contributions and ecological plausibility rather than absolute values.
+
+<br>
+
+![geemod_importance](https://github.com/user-attachments/assets/c6ced674-6c6a-4e1a-a37e-3865f03d8b79)
 
 <br>
 
@@ -131,6 +147,10 @@ There are two modes to define predictor variables:
     - The getAUCROC() function uses the trapezoidal approximation to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
     - The evalReps() function only manages the process throughout the replications;
     - The tssAucReps() function obtains the final TSS and AUC from the results of the previous functions.
+
+<br>
+
+![geemod_validation](https://github.com/user-attachments/assets/990a41a5-74be-4f2b-b24f-4e09bb4f3a56)
 
 <br>
 
