@@ -178,10 +178,17 @@ The weighted and commission options require model validation to be completed bec
     - If so, the regions and occurrences configured in the project are loaded onto the map for quick inspection.
 
 <br>
-![geemod_loadProj](https://github.com/user-attachments/assets/7b9c8537-929a-45fb-9676-fe68c9c0a94e)
+
+![geemod_loadProject](https://github.com/user-attachments/assets/9bfce784-3aaa-473b-9999-983eb250c629)
+
+
 <br>
 
-
-
 ## Save Project
-coming soon ...
+- The models built in the App can be saved by exporting the settings to a CSV file.
+- To be reused, this file should be uploaded to the Assets of a GEE account.
+- Regions and Predictors inputs must be in Asset Mode.
+<br>
+
+![geemod_saveProj](https://github.com/user-attachments/assets/ecfde5b5-046d-45f1-a1c2-054d3e2b21da)
+
