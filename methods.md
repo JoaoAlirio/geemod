@@ -71,12 +71,10 @@ There are two ways to prepare the occurrences.
 - Duplicate occurrences will be removed, leaving only one presence per cell (according to the defined crs and scale).  
 - There are some examples of occurrence datasets available for selection, with or without absences.
 - The background used in MaxEnt is obtained from 10,000 random points generated in the calibration region, limited by the algorithm to the number of cells existing in that area
-- The user can verify if the presences and absences are as expected by loading the different layers on the map and analyzing the numerical results presented.
 
+The user can verify if the presences and absences are as expected by loading the different layers on the map and analyzing the numerical results presented.
 <br>
-
 ![geemod_presences](https://github.com/user-attachments/assets/2a1dd570-8e00-4302-94d1-9b0e723cf503)
-
 <br>
 
 ## Predictors
@@ -125,7 +123,7 @@ There are two modes to define predictor variables:
 
 <br>
 
-![geemod_importance](https://github.com/user-attachments/assets/c6ced674-6c6a-4e1a-a37e-3865f03d8b79)
+![geemod_importance_624](https://github.com/user-attachments/assets/5f1ccb93-fbfa-4e7e-b7e5-f3c92e363212)
 
 <br>
 
@@ -169,6 +167,21 @@ The weighted and commission options require model validation to be completed bec
 <br>
 
 ## Load Project
-coming soon ...
+
+
+- Project settings created and saved in geeMod can be reloaded into the App.
+    - To do this, users can specify the directory of the project's CSV file in a text box. The file must be hosted in GEE Assets and shared with geeMod.
+- There are also three example projects that users can select.
+    - Once the example is selected, the file directory is entered in the text box.
+- When users select the "Load" option, geeMod will search for the file and check if it originated in the App.
+    - If not, an error message appears in the results panel;
+    - If so, the regions and occurrences configured in the project are loaded onto the map for quick inspection.
+
+<br>
+![geemod_loadProj](https://github.com/user-attachments/assets/7b9c8537-929a-45fb-9676-fe68c9c0a94e)
+<br>
+
+
+
 ## Save Project
 coming soon ...
