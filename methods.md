@@ -100,7 +100,7 @@ There are two modes to define predictor variables:
 
 <br>
 
-![geemod_classifiers](https://github.com/user-attachments/assets/74567103-2841-41e4-a7f0-c53a292565b1)
+![geemod_classific](https://github.com/user-attachments/assets/d23c3381-485c-41ad-bc63-5165f62560da)
 
 <br>
 
@@ -148,7 +148,8 @@ There are two modes to define predictor variables:
 
 <br>
 
-![geemod_validation](https://github.com/user-attachments/assets/990a41a5-74be-4f2b-b24f-4e09bb4f3a56)
+![geemod_valid](https://github.com/user-attachments/assets/32488e82-5847-460a-a2bb-f12e8564ff92)
+
 
 <br>
 
@@ -179,7 +180,7 @@ The weighted and commission options require model validation to be completed bec
 
 <br>
 
-![geemod_loadProject](https://github.com/user-attachments/assets/9bfce784-3aaa-473b-9999-983eb250c629)
+![geemod_loadProjct](https://github.com/user-attachments/assets/6244ecdc-0343-43f5-9cb8-7471a0f0bab9)
 
 
 <br>
