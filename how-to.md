@@ -31,4 +31,6 @@ Next, go to GEE > Scripts > Reader, find the geemod folder, and run the main scr
 <br>
 
 ## Import assets and Save projects
-(coming soon ...)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MB7VbGlLcl4?si=G-NUCYTkV0UfA72J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
