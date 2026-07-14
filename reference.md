@@ -26,6 +26,10 @@ body_class: left-align
 
 <br>
 
+The term "smile" in the designations of the RF, GTB, and CART classifiers indicates that the GEE implementation is based on the Smile library (Statistical Machine Intelligence and Learning Engine; <a href="https://haifengl.github.io/" target="_blank">https://haifengl.github.io/</a>). The MaxEnt classifier was integrated in GEE using the implementation provided directly by authors' institution, the American Museum of Natural History.
+
+<br>
+
 ## Resources used in Regions module
 
 |Mode|Resource|Description|GEE Snippet|Source|
