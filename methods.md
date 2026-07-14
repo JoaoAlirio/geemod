@@ -142,7 +142,7 @@ There are two modes to define predictor variables:
         - True Negative Rate (Specificity) -> [ TNR = TN / 'Absence Test Size' ]
         - False Positive Rate -> [ FPR = 1 - TNR ]
         - True Skill Statistic -> [ TSS = Sensitivity + Specificity - 1 ]
-    - The getAUCROC() function uses the trapezoidal approximation to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
+    - The getAUCROC() function uses the trapezoidal approximation (summing the areas of trapezoids of equal width) to compute the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC), that represents the true positive rate (Sensitivity) in relation to the false positive rate (1-Specificity) at all possible classification thresholds;
     - The evalReps() function only manages the process throughout the replications;
     - The tssAucReps() function obtains the final TSS and AUC from the results of the previous functions.
 
