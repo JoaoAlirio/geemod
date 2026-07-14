@@ -193,3 +193,11 @@ The weighted and commission options require model validation to be completed bec
 
 ![geemod_saveProj](https://github.com/user-attachments/assets/ecfde5b5-046d-45f1-a1c2-054d3e2b21da)
 
+<br>
+
+## geeMod quota limits
+
+Earth Engine imposes usage quotas on apps similarly to user’s quotas (<a href="https://developers.google.com/earth-engine/guides/apps" target="_blank">https://developers.google.com/earth-engine/guides/apps</a>). These constraints can restrict the complexity of models that can be run on the web version of geeMod. For example, defining a small pixel size with large regions implies a high number of cells and can generate errors in the creation of pseudo-absences or during the calibration of some algorithms. Likewise, increasing the number of replications raises computational demands and can exceed the usage quotas: the higher the number, the more computational capacity will be needed, so a limit might be reached, beyond which it will not be possible to obtain some models.
+<br>
+For more demanding scenarios, users can use the alternative version that runs in the GEE Code Editor environment, with asynchronous processing occurring in the background and exporting results to Google Drive (see <a href="https://joaoalirio.github.io/geemod/how-to">'How to'</a> page).
+
